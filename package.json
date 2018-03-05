@@ -1,7 +1,7 @@
 {
   "name": "hydrogen-python",
   "main": "./lib/main",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Python language-specific extensions for hydrogen",
   "keywords": [
     "hydrogen",

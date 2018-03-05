@@ -5,7 +5,7 @@ Features:
 * Variable explorer (see [nteract/hydrogen#64]( https://github.com/nteract/hydrogen/issues/64))
 
 Compatibility:
-* [Hydrogen](nteract/hydrogen) version 2.3.0 or later
+* [Hydrogen](https://github.com/nteract/hydrogen) version 2.3.0 or later
 * Variable explorer has only been tested to work with Python 3.5 or later. Pull requests to add Python 2 support are welcome.
 
 ## Feature: Strip common leading whitespace

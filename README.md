@@ -21,23 +21,8 @@ def foo():
     # Select the above two lines and run them with Hydrogen!
 ```
 
-### Limitations
-
-Does not work if the first line ends in `:` and you have a comment after, i.e.
-
-```python
-if True: # having a comment here breaks things
-    print("This doesn't work!")
-```
-
-It also can have unexpected results if you select some code that is malformed to begin with, e.g.
-
-```python
-x = 1
-    print("x is", x) # This works even though it shouldn't
-```
-
-(Pull requests are welcome to fix the first issue; the second probably can't be fixed without changing the Hydrogen package)
+There is also an experimental option to expand the code passed on by hydrogen to include else/elif or closing brackets, which until now is only possible when selecting the code.
+However, the tick mark can not be moved to the right location as of yet.
 
 ## Feature: Variable Explorer
 

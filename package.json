@@ -38,5 +38,13 @@
     "eslint": "^3.9.1",
     "eslint-config-airbnb-base": "^10.0.1",
     "eslint-plugin-import": "^2.2.0"
+},
+"configSchema": {
+  "expandCode": {
+    "title": "[experimental] Expand code on indentation",
+    "type": "array",
+    "default": ["else", "elif", "\\}", "\\]", "\\)"],
+    "description": "When a line is executed without selection, hydrogen only passes on code up that is indented compared to the current line. This setting expands the executed code beyond what hydrogen suggests to include more statements, such as else, elif, or closing brackets on the same indentation level. *Warning:* The hydrogen tick markers are unfortunately _not_ moved to the right location."
+    }
   }
 }

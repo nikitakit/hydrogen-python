@@ -49,7 +49,7 @@
     "expandCodeList": {
       "title": "Code to expand",
       "type": "array",
-      "default": ["else", "elif", "\\}", "\\]", "\\)"],
+      "default": ["else", "elif", "except", "finally", "\\}", "\\]", "\\)"],
       "description": "If the above is enabled, this list will be passed on to a regex, so experts may define their own tokens. In the default setting, else, elif, as well as all closing braces are expanded on."
     }
   }

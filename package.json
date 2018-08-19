@@ -50,7 +50,13 @@
       "title": "Code to Expand",
       "type": "array",
       "default": ["else", "elif", "except", "finally", "\\}", "\\]", "\\)"],
-      "description": "If the above setting is enabled, this list will be passed to a regex. Any of these items in the list can occur on th esame intentation level as the first line. You may define your own custom elements to modify the code to your preferred behaviour. In the default setting, else, elif, except, finally, as well as all closing braces are expanded on."
-    }
+      "description": "If the above setting is enabled, this list will be passed to a regex. Any of these items in the list need to occur on the same intentation level as the first line. You may define your own custom elements to modify the code to your preferred behaviour. In the default setting, else, elif, except, finally, as well as all closing braces are expanded on."
+  },
+  "prependCodeList": {
+    "title": "Code to Expand Before the Execution",
+    "type": "array",
+    "default": ["@"],
+    "description": "If the above setting is enabled, this list will be passed to a regex. Any of these items in the list need to occur on the same intentation level as the first line. You may define your own custom elements to modify the code to your preferred behaviour. In the default setting, the @ decorator is prepended."
+  }
   }
 }

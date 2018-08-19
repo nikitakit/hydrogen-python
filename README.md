@@ -80,6 +80,32 @@ finally:
 # execute the except and finally blocks
 ```
 
+### Extension to the Top (e.g. for decorators)
+
+In the second configuration field, expansion towards the top is defined.
+The preset is to extends decorators (`@`) of functions, so that the following example works when selecting either the line with the decorator or with the function definition and executing via `run` or `run-and-move-down`.
+
+```python
+def deco(f):
+    return lambda x: f(x + 1)
+
+@deco
+def myfunc(x):
+    return 1 / x
+
+myfunc(0)
+```
+
+Contrary to the expansion to the bottom, this _does not_ automatically include comments, or further indentation, but only the immediate match.
+The following example thus would not work with the default settings, but could easily be enabled by adding `#` to the list:
+
+```python
+@deco
+# comment
+def myfunc(x):
+    return 1 / x
+```
+
 ### Customisation
 
 You can extend this list by your choice.

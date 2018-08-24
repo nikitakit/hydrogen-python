@@ -1,8 +1,9 @@
-# :package: Python language-specific extensions for Hydrogen
+# Python language-specific extensions for Hydrogen
 
 Features:
-* Attempts to strip common leading whitespace (see [nteract/hydrogen#862]( https://github.com/nteract/hydrogen/issues/862))
 * Variable explorer (see [nteract/hydrogen#64]( https://github.com/nteract/hydrogen/issues/64))
+* Allows running code with common leading whitespace when there are empty lines at the start (see [nteract/hydrogen#862]( https://github.com/nteract/hydrogen/issues/862))
+* Extend executable code to include `else` clauses, decorators, and more (experimental, must be manually enabled in the package settings)
 
 Compatibility:
 * [Hydrogen](https://github.com/nteract/hydrogen) version 2.3.0 or later

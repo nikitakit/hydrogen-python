@@ -38,5 +38,25 @@
     "eslint": "^3.9.1",
     "eslint-config-airbnb-base": "^10.0.1",
     "eslint-plugin-import": "^2.2.0"
+  },
+  "configSchema": {
+    "expandCode": {
+      "title": "Extend Executable Code [experimental]",
+      "type": "boolean",
+      "default": "false",
+      "description": "When a line is executed without selection, hydrogen only passes on code up that is indented compared to the current line. In python that unfortunately does not always work, because some control structures (e.g. else) continue on the same indentation level. Enabling this setting expands the executed code beyond what hydrogen suggests on the basis of the indentation level. The statements which trigger such extension can be defined below. *Warning:* The hydrogen tick markers are unfortunately _not_ moved to the right location."
+    },
+    "expandCodeList": {
+      "title": "Code to Expand",
+      "type": "array",
+      "default": ["else", "elif", "except", "finally", "\\}", "\\]", "\\)"],
+      "description": "If the above setting is enabled, this list will be passed to a regex. Any of these items in the list need to occur on the same intentation level as the first line. You may define your own custom elements to modify the code to your preferred behaviour. In the default setting, else, elif, except, finally, as well as all closing braces are expanded on."
+  },
+  "prependCodeList": {
+    "title": "Code to Expand Before the Execution",
+    "type": "array",
+    "default": ["@"],
+    "description": "If the above setting is enabled, this list will be passed to a regex. Any of these items in the list need to occur on the same intentation level as the first line. You may define your own custom elements to modify the code to your preferred behaviour. In the default setting, the @ decorator is prepended."
+  }
   }
 }
